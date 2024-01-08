@@ -1,0 +1,185 @@
+.Container {
+  background-image: url("../public/home.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  background-size: contain;
+
+  .h1 {
+    color: #000;
+    font-family: Itim;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 23.92px;
+  }
+}
+.search {
+  width: 580px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 171px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Itim;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.chota-container {
+  display: flex;
+  margin-left: 80px;
+  p {
+    margin-top: 10px;
+    font-family: Itim;
+    font-size: 30px;
+
+    margin-left: 30px;
+  }
+  .check {
+    margin-top: 0px;
+    width: 80px;
+    height: 43px;
+    // display: block;
+  }
+}
+.Addtask {
+  border-radius: 71px;
+  font-family: Itim;
+  font-size: 30px;
+  width: 220px;
+  height: 43px;
+  color: #ffffff;
+  background-color: #000;
+  transition: transform 0.4s ease;
+  margin-top: 20px;
+}
+.Addtask:hover {
+  transform: scale(1.1);
+}
+.Addtask:active {
+  transform: scale(1);
+}
+
+.allget {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  p {
+    position: relative;
+    font-size: 20px;
+    max-width: 800px;
+  }
+  justify-content: space-between;
+  // text-align: center;
+  width: 1000px;
+  max-height: 400px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: #ffffff;
+  overflow: auto;
+  .items {
+    .box {
+      width: 25px;
+      margin-right: 20px;
+    }
+    right: 30%;
+    display: flex;
+    .delete {
+      color: rgb(255, 255, 255);
+      background-color: rgb(255, 0, 0);
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+    .delete:hover {
+      transform: scale(1.1);
+    }
+    .delete:active {
+      transform: scale(1);
+    }
+    .update:hover {
+      transform: scale(1.1);
+    }
+    .update:active {
+      transform: scale(1);
+    }
+    .update {
+      height: 40px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(67, 171, 32);
+      transition: transform 0.4s ease;
+    }
+  }
+}
+
+.task-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.0001px solid #ccc;
+  padding: 10px 0;
+}
+
+.updatecontainer {
+  .updatechota {
+    display: flex;
+    p {
+      max-width: 500px;
+      margin-left: 30px;
+      font-size: 30px;
+      overflow: auto;
+      // color: #ffffff;
+      // background-color: #000;
+    }
+  }
+  .input {
+    width: 580px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 171px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Itim;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+.bth {
+  font-size: 30px;
+  color: rgb(55, 46, 46);
+}
+
+.chec {
+  width: 40px;
+  height: 30px;
+}
+@media screen and (max-width: 1034px) {
+  .Container {
+    // width: 800px;
+  }
+  .allget {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 623px) {
+  .allget {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1305px) {
+  .allget {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Container {
+    width: fit-content;
+  }
+  .allget {
+    max-width: 800px;
+  }
+}
