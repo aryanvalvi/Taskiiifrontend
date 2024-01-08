@@ -10,7 +10,7 @@ const App = () => {
   console.log(workdone);
   const GetAll = () => {
     axios
-      .get("http://localhost:5000/api/todo/")
+      .get("https://taskiiibackeend.onrender.com/api/todo/")
       .then((res) => {
         setGetAll(res.data);
       })
@@ -29,7 +29,7 @@ const App = () => {
       completed: workdone,
     };
     axios
-      .post("http://localhost:5000/api/todo/Create/", ronaldo)
+      .post("https://taskiiibackeend.onrender.com/api/todo/Create/", ronaldo)
       .then((res) => {
         console.log("data bhej diya", res);
         SetRerender(!rerender);
@@ -40,7 +40,7 @@ const App = () => {
   const TaskDelete = (e) => {
     const Id = {};
     axios
-      .delete(`http://localhost:5000/api/todo/delete/${e}`)
+      .delete(`https://taskiiibackeend.onrender.com/api/todo/delete/${e}`)
       .then((res) => {
         console.log("Deleted");
         SetRerender(!rerender);

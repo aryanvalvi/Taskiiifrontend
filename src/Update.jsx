@@ -19,7 +19,9 @@ const Update = () => {
 
   const button = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/todo/${idParam}`);
+      const res = await axios.get(
+        `https://taskiiibackeend.onrender.com/api/todo/${idParam}`
+      );
       SetThatone([res.data]);
 
       SetWorkdon(res.data.completed);
@@ -33,7 +35,10 @@ const Update = () => {
       message: data,
       completed: workdone,
     };
-    axios.patch(`http://localhost:5000/api/todo/update/${idParam}`, fuck);
+    axios.patch(
+      `https://taskiiibackeend.onrender.com/api/todo/update/${idParam}`,
+      fuck
+    );
   };
   const ChnageButtonvalue = () => {
     SetWorkdon(!workdone);
